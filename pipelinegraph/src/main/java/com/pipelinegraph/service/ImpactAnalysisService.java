@@ -24,7 +24,7 @@ public class ImpactAnalysisService {
         List<Map<String, Object>> rows = graphQueryRepository.findImpact(systemId);
 
         if (rows.isEmpty()) {
-            throw new NodeNotFoundException("System with ID " + systemId + " not found or has no impact data.");
+            throw new NodeNotFoundException("System with ID " + systemId + " not found or has no impact.","Exception" );
         }
 
         List<GraphNodeDto> nodes = extractNodes(rows);
