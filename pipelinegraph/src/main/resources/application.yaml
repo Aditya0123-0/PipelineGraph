@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: pipelinegraph
+
+  neo4j:
+    uri: bolt+s://db-478d50e0.databases.cognodb.com
+    authentication:
+      username: cognodb
+      password: faf3748fa8d76622189e19fa45d21160
