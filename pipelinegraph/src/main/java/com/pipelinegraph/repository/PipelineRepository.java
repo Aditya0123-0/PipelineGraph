@@ -1,10 +1,9 @@
 package com.pipelinegraph.repository;
 
-
-import com.pipelinegraph.model.SystemNode;
+import com.pipelinegraph.model.Pipeline;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SystemRepository extends Neo4jRepository<SystemNode,String> {
+public interface PipelineRepository extends Neo4jRepository<Pipeline,String> {
 }
