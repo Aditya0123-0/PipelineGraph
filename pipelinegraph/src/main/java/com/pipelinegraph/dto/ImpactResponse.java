@@ -1,4 +1,12 @@
 package com.pipelinegraph.dto;
 
-public class ImpactResponse {
+import java.util.List;
+
+public record ImpactResponse(
+        String rootSystemId,
+        List<GraphNodeDto> affectedNodes,
+        List<GraphEdgeDto> affectedEdges,
+        int totalImpactCount
+)
+{
 }

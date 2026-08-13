@@ -1,4 +1,8 @@
 package com.pipelinegraph.dto;
 
-public class GraphEdgeDto {
+public record GraphEdgeDto (
+        String source,
+        String target,
+        String relationship
+){
 }
