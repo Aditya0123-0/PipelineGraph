@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/system")
+@RequestMapping({"/api/system", "/api/systems"})
 public class SystemController {
 
     private final SystemService systemService;
