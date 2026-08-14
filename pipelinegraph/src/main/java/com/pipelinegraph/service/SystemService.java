@@ -28,7 +28,7 @@ public class SystemService {
     }
 
     public SystemResponse getSystemById(String id) {
-        return systemRepository.findById(id).map(this::toResponse).orElseThrow(()-> new NodeNotFoundException("System: " + id));
+        return systemRepository.findById(id).map(this::toResponse).orElseThrow(()-> new NodeNotFoundException("System: " ,"id"));
     }
 
 
