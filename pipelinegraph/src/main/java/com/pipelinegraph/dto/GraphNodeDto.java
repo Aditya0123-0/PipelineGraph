@@ -1,4 +1,7 @@
 package com.pipelinegraph.dto;
 
-public class GraphNodeDto {
-}
+public record GraphNodeDto(
+        String id,
+        String label,      // display name
+        String type
+) { }
