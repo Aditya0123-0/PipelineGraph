@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pipe-lead-sync",
+    "name": "Lead Sync Pipeline",
+    "schedule": "hourly",
+    "sources": ["sys-salesforce"],
+    "targets": ["sys-snowflake"],
+    "carries": ["data-customer-pii"]
+  },
+  {
+    "id": "pipe-invoice",
+    "name": "Invoice Pipeline",
+    "schedule": "nightly",
+    "sources": ["sys-sap"],
+    "targets": ["sys-netsuite"],
+    "carries": ["data-invoice"]
+  },
+  {
+    "id": "pipe-support-ticket",
+    "name": "Support Ticket Pipeline",
+    "schedule": "hourly",
+    "sources": ["sys-zendesk"],
+    "targets": ["sys-snowflake"],
+    "carries": ["data-support"]
+  },
+  {
+    "id": "pipe-payment-reconciliation",
+    "name": "Payment Reconciliation Pipeline",
+    "schedule": "nightly",
+    "sources": ["sys-stripe"],
+    "targets": ["sys-netsuite"],
+    "carries": ["data-payment"]
+  },
+  {
+    "id": "pipe-hr-payroll",
+    "name": "HR Payroll Pipeline",
+    "schedule": "nightly",
+    "sources": ["sys-workday"],
+    "targets": ["sys-sap"],
+    "carries": ["data-employee-pii"]
+  },
+  {
+    "id": "pipe-customer-360",
+    "name": "Customer 360 Pipeline",
+    "schedule": "nightly",
+    "sources": ["sys-salesforce", "sys-zendesk"],
+    "targets": ["sys-snowflake"],
+    "carries": ["data-customer-pii", "data-usage"]
+  }
+]

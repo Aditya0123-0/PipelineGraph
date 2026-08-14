@@ -1,0 +1,12 @@
+[
+  { "id": "agent-lead-qualifier",     "name": "Lead Qualifier Agent",       "function": "Scores and routes inbound leads",        "depends_on": ["sys-salesforce"] },
+  { "id": "agent-invoice-processor",  "name": "Invoice Processor Agent",    "function": "Generates and validates invoices",        "depends_on": ["sys-sap"] },
+  { "id": "agent-ticket-triage",      "name": "Ticket Triage Agent",        "function": "Classifies and prioritizes support tickets","depends_on": ["sys-zendesk"] },
+  { "id": "agent-payment-reconciler", "name": "Payment Reconciler Agent",   "function": "Matches payments to invoices",            "depends_on": ["sys-stripe"] },
+  { "id": "agent-payroll-sync",       "name": "Payroll Sync Agent",         "function": "Syncs payroll data to finance systems",   "depends_on": ["sys-workday"] },
+  { "id": "agent-warehouse-loader",   "name": "Data Warehouse Loader Agent","function": "Loads pipeline output into Snowflake",    "depends_on": ["sys-snowflake"] },
+  { "id": "agent-customer-insights",  "name": "Customer Insights Agent",    "function": "Builds unified customer profiles",        "depends_on": ["sys-snowflake"] },
+  { "id": "agent-notifier",           "name": "Notification Agent",        "function": "Sends alerts and updates to Slack",       "depends_on": ["sys-slack"] },
+  { "id": "agent-contract-renewal",   "name": "Contract Renewal Agent",     "function": "Flags and drafts contract renewals",      "depends_on": ["sys-salesforce"] },
+  { "id": "agent-expense-approval",   "name": "Expense Approval Agent",     "function": "Routes expense reports for approval",     "depends_on": ["sys-netsuite"] }
+]

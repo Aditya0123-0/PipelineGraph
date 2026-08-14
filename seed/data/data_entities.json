@@ -1,0 +1,8 @@
+[
+  { "id": "data-customer-pii",  "name": "Customer PII",       "sensitivity": "PII" },
+  { "id": "data-invoice",       "name": "Invoice Data",       "sensitivity": "FINANCIAL" },
+  { "id": "data-payment",       "name": "Payment Data",       "sensitivity": "FINANCIAL" },
+  { "id": "data-employee-pii",  "name": "Employee PII",       "sensitivity": "PII" },
+  { "id": "data-support",       "name": "Support Ticket Data","sensitivity": "INTERNAL" },
+  { "id": "data-usage",         "name": "Product Usage Data", "sensitivity": "INTERNAL" }
+]
