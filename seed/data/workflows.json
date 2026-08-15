@@ -1,0 +1,44 @@
+[
+  {
+    "id": "wf-customer-onboarding",
+    "name": "Customer Onboarding",
+    "owned_by": "team-sales",
+    "uses_agents": ["agent-lead-qualifier", "agent-customer-insights", "agent-notifier"],
+    "triggers": ["wf-lead-to-cash"]
+  },
+  {
+    "id": "wf-lead-to-cash",
+    "name": "Lead to Cash",
+    "owned_by": "team-sales",
+    "uses_agents": ["agent-lead-qualifier", "agent-invoice-processor"],
+    "triggers": ["wf-order-fulfillment"]
+  },
+  {
+    "id": "wf-order-fulfillment",
+    "name": "Order Fulfillment",
+    "owned_by": "team-ops",
+    "uses_agents": ["agent-warehouse-loader"],
+    "triggers": ["wf-invoice-reconciliation"]
+  },
+  {
+    "id": "wf-invoice-reconciliation",
+    "name": "Invoice Reconciliation",
+    "owned_by": "team-finance",
+    "uses_agents": ["agent-invoice-processor", "agent-payment-reconciler"],
+    "triggers": []
+  },
+  {
+    "id": "wf-support-escalation",
+    "name": "Support Escalation",
+    "owned_by": "team-support",
+    "uses_agents": ["agent-ticket-triage", "agent-notifier"],
+    "triggers": []
+  },
+  {
+    "id": "wf-payroll-processing",
+    "name": "Payroll Processing",
+    "owned_by": "team-hr",
+    "uses_agents": ["agent-payroll-sync"],
+    "triggers": []
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "team-sales", "name": "Sales" },
+  { "id": "team-support", "name": "Support" },
+  { "id": "team-finance", "name": "Finance" },
+  { "id": "team-hr", "name": "HR" },
+  { "id": "team-ops", "name": "Operations" },
+  { "id": "team-data", "name": "Data Platform" }
+]

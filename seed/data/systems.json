@@ -1,0 +1,10 @@
+[
+  { "id": "sys-salesforce", "name": "Salesforce",  "type": "CRM",           "criticality": "HIGH" },
+  { "id": "sys-sap",        "name": "SAP",          "type": "ERP",           "criticality": "HIGH" },
+  { "id": "sys-zendesk",    "name": "Zendesk",      "type": "Support",       "criticality": "MEDIUM" },
+  { "id": "sys-netsuite",   "name": "NetSuite",     "type": "Finance",       "criticality": "HIGH" },
+  { "id": "sys-workday",    "name": "Workday",      "type": "HR",            "criticality": "MEDIUM" },
+  { "id": "sys-stripe",     "name": "Stripe",       "type": "Payments",      "criticality": "HIGH" },
+  { "id": "sys-snowflake",  "name": "Snowflake",    "type": "Data Warehouse","criticality": "HIGH" },
+  { "id": "sys-slack",      "name": "Slack",        "type": "Messaging",     "criticality": "LOW" }
+]
